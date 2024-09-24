@@ -11,7 +11,7 @@ route::get('/laravel', [controllerteste:: class, 'visao'])->name('andre.laravel'
 //site é a rota principal 
 route::get('/site', [controllerteste:: class, 'exibir']);
 
-route::get('/bd', [BancoDeDadosController::class, 'receber'])->name('local.bd');
+route::get('/bd', [BancoDeDadosController::class, 'receber'])->name('local.banco');
 
 route::get('/create', [controllerteste::class, 'create'])->name('index.create');
 

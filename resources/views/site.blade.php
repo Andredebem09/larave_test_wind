@@ -21,7 +21,7 @@
 
     <br>
 
-    <a href="{{ route('local.bd')}}">acessar banco de dados</a>
+    <a href="{{ route('local.banco')}}">acessar banco de dados</a>
 
     
 
