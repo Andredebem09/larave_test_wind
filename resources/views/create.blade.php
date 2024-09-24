@@ -10,8 +10,12 @@
     <form action="{{ route('index.envios')}}" method="POST">
          <!-- <input type="hidden" value="{{csrf_token()}}" name="_token">  -->
          @csrf() 
+         <p>coloque a duvida</p>
         <input type="text" placeholder="Assunto" name="subject">
+        <br>
+        <p>coloque a descrição sobre o assunto:</p>
         <textarea name="body" cols="30" placeholder= "Descrição"> </textarea>
+        <br>
         <button type="submit">enviar</button>
     </form>
 </body>

@@ -10,7 +10,7 @@ class controllerteste extends Controller
 {
   public function visao()
   {
-    $retornar = new Suporte(); // Supondo que a classe Suporte esteja corretamente definida
+    $retornar = new Suporte(); 
     $retornos = $retornar->all();
     dd($retornos);
       
@@ -25,7 +25,39 @@ class controllerteste extends Controller
   }
   public function envios(request $request)
   {
-      dd($request->all());
+      $suporte = new suporte();
+
+
+      $suporte->subject = $request->subject;
+      $suporte->body = $request->body;
+      $suporte->save();
+
+      }
+  public function sugestao()
+  {
+    dd('quem?......');
   }
+  public function forum()
+  {
+    return view('forum');
+  }
+  
+  public function bancos()
+  {
+    return view('banco');
+  }
+  
+  
+  public function duvida(request $pergunta)
+  {
+      $professor = new banco_de_dados();
+
+      $professor->professor = $pergunta->professor;
+      $professor->turma = $pergunta->turma;
+      $professor->total_aluno = $pergunta->total_aluno;
+      $professor->save();
+  }
+
+  
 
 }

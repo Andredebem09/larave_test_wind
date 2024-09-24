@@ -9,5 +9,5 @@ class banco_de_dados extends Model
 {
     use HasFactory;
 
-    public $table = 'banco_de_dados';
+    protected $table = 'banco_de_dados';
 }

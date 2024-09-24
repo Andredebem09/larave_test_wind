@@ -23,6 +23,16 @@
 
     <a href="{{ route('local.banco')}}">acessar banco de dados</a>
 
+    <br>
+
+    <a href="{{route('index.forum')}}">forum</a>
+
+    <br>
+
+    <a href="{{route('index.banco')}}">dados de professor</a>
+
+
+
     
 
     

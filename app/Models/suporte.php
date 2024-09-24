@@ -10,4 +10,8 @@ class suporte extends Model
     use HasFactory;
 
     protected $table = 'suportes';
+
+    
+
+
 }
