@@ -1,43 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testando laravel</title>
-</head>
-<body>
-    <h1>Bem vindo</h1>
+@extends('layout')
+
+@section('corpo')
+
+<div class="corpo">
 
     <p>crie sua duvida abaixo:</p>
 
     <a href="{{ route('index.create')}}">criar duvida</a>
-
+    
     <br>
-
+    
+    <a href="{{route('index.consulta')}}">consulta resultados banco</a>
+    
+    <br>
+    
+    
+    <a href="{{ route('andre.laravel')}}">curso laravel</a>
+    
+    
     <p>links para paginas:</p>
-
-
-    <a href="{{ route('andre.laravel')}}">acessar pagina</a>
-
-    <br>
-
-    <a href="{{ route('local.banco')}}">acessar banco de dados</a>
-
-    <br>
-
-    <a href="{{route('index.forum')}}">forum</a>
-
-    <br>
 
     <a href="{{route('index.banco')}}">dados de professor</a>
 
-
-
-    
+    <br>
 
     
-
-
+    <a href="{{ route('local.banco')}}">acessar banco de dados</a>
     
-</body>
-</html>
+    
+    
+    <p>entrar em contato:</p>
+
+    <a href="{{route('index.formulario')}}">entrar em contato</a>
+
+
+</div>
+
+@endsection

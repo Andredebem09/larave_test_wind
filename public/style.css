@@ -1,0 +1,29 @@
+.corpo{
+    background-color: white;
+    color: rgb(47, 135, 173);
+    padding: 20px;
+}
+
+.corpo > a{
+    color: rgb(26, 23, 23);
+    border: solid 1px;
+    padding: 1px;
+    background-color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+    
+}
+
+.corpo > a:hover{
+    color: black;
+    border: solid 1px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.corpo > p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+

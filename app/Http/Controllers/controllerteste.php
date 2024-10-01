@@ -37,15 +37,15 @@ class controllerteste extends Controller
   {
     dd('quem?......');
   }
-  public function forum()
+  public function receber()
   {
-    return view('forum');
+    return view('consulta_banco_prof');
   }
   
-  public function bancos()
-  {
-    return view('banco');
-  }
+   public function bancos()
+   {
+     return view('banco');
+   }
   
   
   public function duvida(request $pergunta)
@@ -56,8 +56,24 @@ class controllerteste extends Controller
       $professor->turma = $pergunta->turma;
       $professor->total_aluno = $pergunta->total_aluno;
       $professor->save();
+
+      return redirect()->route('index.site');
+
+  }
+  public function consulta()
+  {
+    $suportes = suporte::all();
+
+    return view('consulta', [
+      'title' => 'Consulta de registros'
+    ], compact('suportes'));
+  }
+  public function contato()
+  {
+    return view('formulario');
   }
 
   
 
 }
+//criar nova tabela no banco de dados hcode_prject e depois criar a funçao e conectar nas rotas e na blade da rota forum.
